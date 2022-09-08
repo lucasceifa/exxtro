@@ -1,0 +1,95 @@
+.loginMenu{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 332px;
+    height: 412px;
+    z-index: 9;
+    background-color: var(--white);
+    padding: 19px;
+}
+.display-none{
+    display: none;
+}
+.formLogin{
+    display: flex;
+    flex-direction: column;
+}
+.formLogin--top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 24px;
+}
+.formLogin--close{
+    border: none;
+    color: var(--purple);
+    background-color: transparent;
+    font-size: 12pt;
+}
+.formLogin--input{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    font-size: 9pt;
+}
+.formLogin--label{
+    color: var(--gray);
+    margin: 10px 0;
+}
+.inputLogin{
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    color: var(--light-gray);
+    padding-bottom: 3px;
+}
+.inputLogin:focus{
+    outline: none;
+    border-bottom: 1px solid var(--dark-blue);
+}
+.submitButton{
+    margin: 20px 20px;
+    height: 30px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-size: 10pt;
+    border: 1px solid var(--dark-blue);
+}
+.loginForgot{
+    margin: 0 20px;
+    margin-bottom: 18px;
+    text-decoration: none;
+    color: var(--purple);
+    text-align: center;
+    font-size: 10pt;
+}
+.loginForgot:hover{
+    text-decoration: underline;
+}
+.newUser{
+    margin: 0 20px;
+    text-align: center;
+    font-size: 10pt;
+}
+.newUser--link{
+    text-decoration: none;
+    color: var(--purple);
+    margin-left: 5px;
+}
+.newUser--link:hover{
+    text-decoration: underline;
+}
+.iconsLogin{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+.iconsLogin--item__brands{
+    color: var(--dark-blue);
+    font-size: 64px;
+    margin: 0px 10px;
+    margin-top: 22px;
+}

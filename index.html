@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset/reset.css">
+    <link rel="stylesheet" href="assets/css/colors/colors.css">
+    <link rel="stylesheet" href="assets/css/header/header.css">
+    <link rel="stylesheet" href="assets/css/header/menuControl.css">
+    <link rel="stylesheet" href="assets/css/header/loginArea.css">
+    <link rel="stylesheet" href="assets/css/header/nav.css">
+    <link rel="stylesheet" href="assets/css/productsArea/caroulselMain.css">
+    <link rel="stylesheet" href="assets/css/productsArea/offers.css">
+    <link rel="stylesheet" href="assets/css/productsArea/caroulselProducts.css">
+    <link rel="stylesheet" href="assets/css/footer/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hamburguerMenu" class="navMenu d-none">
+        <div class="menuControl">
+            <img class="menuControl--img" src="assets/img/exxtro_logo.png" alt="">
+            <button id="closeButton" class="menuControl--close"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="menuControl--column">
+            <p class="menuControl--column__title">Especiais</p>
+            <nav class="menuControl--nav menuControl--nav__border">
+                <a class="menuControl--nav__link" href="#">Ofertas</a>
+                <a class="menuControl--nav__link" href="#">Meu Desconto</a>
+                <a class="menuControl--nav__link" href="#">Qualitá</a>
+                <a class="menuControl--nav__link" href="#">Rótulos Clube Exxtro</a>
+                <a class="menuControl--nav__link" href="#">3º, 4º e 5º Feira Exxtro</a>
+                <a class="menuControl--nav__link" href="#">Folheteria Digital</a>
+                <a class="menuControl--nav__link" href="#">Eletro</a>
+                <a class="menuControl--nav__link" href="#">Cartões Exxtro</a>
+            </nav>
+        </div>
+        <div class="menuControl--column">
+            <nav class="menuControl--nav">
+                <p class="menuControl--column__title">Categorias</p>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Alimentos</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Bebidas</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Bebidas alcóolicas</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Automotivos</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Bebês e crianças</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Beleza e perfumaria</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Brinquedos e jogos</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Cama, mesa e banho</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Casa e construção</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Celulares e smartphones</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Climatização e ventilação</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Cuidados com a saúde</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="menuControl--section">
+                    <a class="menuControl--section__link" href="#">Cuidados pessoais</a>
+                    <button class="menuControl--section__button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="loginMenu display-none">
+        <form class="formLogin" action="" method="get">
+            <div class="formLogin--top">
+                <h4 class="formLogin--title">Entrar</h4>
+                <button class="formLogin--close"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="formLogin--input">
+                <label for="formLabel" class="formLogin--label">Email ou CPF/CNPJ</label>
+                <input class="inputLogin" type="text" placeholder="Email ou CPF/CNPJ">
+            </div>
+            <div class="formLogin--input">
+                <label for="formLabel" class="formLogin--label">Senha</label>
+                <input class="inputLogin" type="text" placeholder="Senha">
+            </div>
+            <input class="submitButton" type="submit" value="Entrar">
+            <a class="loginForgot" href="#">Esqueci minha senha ou e-mail</a>
+            <div class="newUser">
+                Novo usuário? <a class="newUser--link" href="#">Cadastre-se</a>
+            </div>
+            <div class="iconsLogin">
+                <a href="#" class="iconsLogin--item__brands"><i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="iconsLogin--item__brands"><i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+    <div>
+        <nav class="nav--header">
+            <ul class="nav--list">
+                <li class="nav--list__item"><a class="nav--list__link" href="#">Seguros Extra</a></li>
+                <li class="nav--list__item"><a class="nav--list__link" href="#">Cartões Extra</a></li>
+                <li class="nav--list__item"><a class="nav--list__link" href="#">Nossas Lojas</a></li>
+                <li class="nav--list__item"><a class="nav--list__link" href="#">Como Comprar</a></li>
+                <li class="nav--list__item blue--link__area"><a class="nav--list__link " href="#">Atendimento</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="search--container">  
+            <img class="search--logo" src="assets/img/exxtro_logo.png" alt="">
+            <form class="search--form" action="" method="get">
+                <input class="search--form__input" type="search" id="searchProducts" placeholder="Busque usando virgula, ex: leite, cerveja, azeite, arroz, iogurte">
+                <button class="search--form__button">
+                    <i class="fa-solid fa-magnifying-glass search--icon"></i> <span class="search--form__span">BUSCAR</span>
+                </button>
+            </form>
+            <div class="search--utilities login--utilities">
+                <div class="header--box first--box">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="header--box__text">Entrar</span>
+                    <i class="fa-sharp fa-solid fa-angle-down"></i>
+                </div>
+                <div class="header--box second--box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header--products">
+            <div class="header--categories">
+                <button class="buttonHeader" id="categoriesMenu">
+                    <i class="fa-solid fa-bars header--menu__icon"></i>
+                    <a href="#" class="header--categories__link">Ver todas as categorias</a>
+                </button>
+            </div>
+            <div class="header--categories">
+                <a href="" class="header--categories__link">Ofertas Cartão Exxtro 💳</a>
+            </div>
+            <div class="header--categories">
+                <a href="" class="header--categories__link">Meu Desconto 🤩</a>
+            </div>
+            <div class="header--categories">
+                <a href="" class="header--categories__link">3ª, 4ª e 5ª Feira Extra 🍎
+                </a>
+            </div>
+            <div class="header--categories">
+                <a href=""  class="header--categories__link">Produtos Qualitá 💜</a>
+            </div>
+            <div class="header--categories">
+                <a href="" class="header--categories__link">O Exxtro tá On 📲</a>
+            </div>
+            
+        </div>
+    </header>
+    <main class="container">
+        <div class="advertising--banner">
+            <img class="advertising--banner__img" src="" alt="">
+        </div>
+        <div class="slider">
+            <div class="caroulsel">
+                <div class="caroulsel--item"><img src="assets/img/main__carousel1.jpg" alt="" class="caroulsel--item__img"></div>
+                <div class="caroulsel--item"><img src="assets/img/main__carousel2.jpg" alt="" class="caroulsel--item__img"></div>
+                <div class="caroulsel--item"><img src="assets/img/main__carousel3.jpg" alt="" class="caroulsel--item__img"></div>
+            </div>
+            <div class="slider--button">
+                <button onclick="previousItem()" class="slider--button__item" id="previousButton"><i class="fa-solid fa-angle-left"></i></button>
+                <button onclick="nextItem()" class="slider--button__item" id="nextButton"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="slider--currentImage" id="bar">
+            
+        </div>
+        <div class="offers">
+            <div class="offers--banner">
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner2.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner3.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner4.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner5.jpg" alt="Destilado">
+                </a>
+            </div>
+            <div class="offers--banner">
+                <a class="offers--smallBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__smallBanner1.jpg" alt="">
+                </a>
+                <a class="offers--smallBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__smallBanner2.jpg" alt="">
+                </a>
+                <a class="offers--smallBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__smallBanner3.jpg" alt="">
+                </a>
+                <a class="offers--smallBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__smallBanner4.jpg" alt="">
+                </a>
+                <a class="offers--smallBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__smallBanner5.jpg" alt="">
+                </a>
+                <a class="offers--smallBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__smallBanner6.jpg" alt="">
+                </a>
+            </div>
+            <div class="offers--banner">
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner6.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner7.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner8.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner9.jpg" alt="Destilado">
+                </a>
+                <a class="offers--bigBanners__links" href="#">
+                    <img class="offers--banner__img" src="assets/img/offer__bigBanner10.jpg" alt="Destilado">
+                </a>
+            </div>
+        </div>
+        <div class="products">
+            <h1 class="products--title">Mais Vendidos</h1>
+            <div class="slider--products">
+                <div id="uopa" class="carousel--products">
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/leite__ninho.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Leite em Pó Integral Nestlé Ninho Forti+ Lata 380g</a>
+                            <p class="item__price">R$20,89</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/leite__moça.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Leite Condensado MOÇA Lata 395g</a>
+                            <p class="item__price">R$8,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/oleo__soya.png" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Óleo De Soja QUALITÁ Garrafa 900ml</a>
+                            <p class="item__price">R$8,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/batata.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Batata 1Kg</a>
+                            <p class="item__price">R$6,59</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/refrigerante.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Refrigerante Sem Açúcar Coca-Cola Garrafa 1,5L</a>
+                            <p class="item__price">R$6,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/monster.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Energético Monster Lata 473ml</a>
+                            <p class="item__price">R$8,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/papel__higienico.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Papel Higiênico Folha Dupla Neutro PERSONAL Vip Leve 12 Pague 11 Rolos de 30m Cada</a>
+                            <p class="item__price">R$13,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/agua__coco.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Água de Coco Esterilizada Kero Coco Caixa 1l</a>
+                            <p class="item__price">R$9,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="slider--button2">
+                    <button onclick="previousItemProducts()" class="slider--button__item2" id="previousButton"><i class="fa-solid fa-angle-left"></i></button>
+                    <button onclick="nextItemProducts()" class="slider--button__item2" id="nextButton"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="offers--banner">
+            <a class="offers--smallBanners__links" href="#">
+                <img class="offers--banner__img" src="assets/img/offer__smallBanner1.jpg" alt="">
+            </a>
+            <a class="offers--smallBanners__links" href="#">
+                <img class="offers--banner__img" src="assets/img/offer__smallBanner2.jpg" alt="">
+            </a>
+            <a class="offers--smallBanners__links" href="#">
+                <img class="offers--banner__img" src="assets/img/offer__smallBanner3.jpg" alt="">
+            </a>
+            <a class="offers--smallBanners__links" href="#">
+                <img class="offers--banner__img" src="assets/img/offer__smallBanner4.jpg" alt="">
+            </a>
+            <a class="offers--smallBanners__links" href="#">
+                <img class="offers--banner__img" src="assets/img/offer__smallBanner5.jpg" alt="">
+            </a>
+            <a class="offers--smallBanners__links" href="#">
+                <img class="offers--banner__img" src="assets/img/offer__smallBanner6.jpg" alt="">
+            </a>
+        </div>
+        <div class="products">
+            <h1 class="products--title">Mais Buscados</h1>
+            <div class="slider--products">
+                <div class="carousel--products">
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/leite__ninho.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Leite em Pó Integral Nestlé Ninho Forti+ Lata 380g</a>
+                            <p class="item__price">R$20,89</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/leite__moça.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Leite Condensado MOÇA Lata 395g</a>
+                            <p class="item__price">R$8,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/oleo__soya.png" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Óleo De Soja QUALITÁ Garrafa 900ml</a>
+                            <p class="item__price">R$8,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/batata.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Batata 1Kg</a>
+                            <p class="item__price">R$6,59</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/refrigerante.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Refrigerante Sem Açúcar Coca-Cola Garrafa 1,5L</a>
+                            <p class="item__price">R$6,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/monster.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Energético Monster Lata 473ml</a>
+                            <p class="item__price">R$8,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/papel__higienico.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Papel Higiênico Folha Dupla Neutro PERSONAL Vip Leve 12 Pague 11 Rolos de 30m Cada</a>
+                            <p class="item__price">R$13,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/agua__coco.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Água de Coco Esterilizada Kero Coco Caixa 1l</a>
+                            <p class="item__price">R$9,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="slider--button2">
+                    <button class="slider--button__item2" id="previousButton"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="slider--button__item2" id="nextButton"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <h1 class="products--title">Geladeira Cheia</h1>
+            <div class="slider--products">
+                <div class="carousel--products">
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/leite__ninho.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Leite em Pó Integral Nestlé Ninho Forti+ Lata 380g</a>
+                            <p class="item__price">R$20,89</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/leite__moça.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Leite Condensado MOÇA Lata 395g</a>
+                            <p class="item__price">R$8,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/oleo__soya.png" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Óleo De Soja QUALITÁ Garrafa 900ml</a>
+                            <p class="item__price">R$8,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/batata.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Batata 1Kg</a>
+                            <p class="item__price">R$6,59</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/refrigerante.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Refrigerante Sem Açúcar Coca-Cola Garrafa 1,5L</a>
+                            <p class="item__price">R$6,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/monster.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Energético Monster Lata 473ml</a>
+                            <p class="item__price">R$8,69</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/papel__higienico.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Papel Higiênico Folha Dupla Neutro PERSONAL Vip Leve 12 Pague 11 Rolos de 30m Cada</a>
+                            <p class="item__price">R$13,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                    <div class="carousel--products__item">
+                        <a class="item__link" href="#">
+                            <img class="item__img" src="assets/img/agua__coco.jpg" alt="">
+                        </a>
+                        <div>
+                            <a class="item__label">Água de Coco Esterilizada Kero Coco Caixa 1l</a>
+                            <p class="item__price">R$9,99</p>
+                        </div>
+                        <button class="item__buyButton">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="slider--button2">
+                    <button class="slider--button__item2" id="previousButton"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="slider--button__item2" id="nextButton"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="offers--footer">
+            <div class="offers--footer__line">
+                <a class="offers--footer__link" href="#"><img class="offers--footer__img" src="assets/img/anime header.png" alt=""></a>
+                <a class="offers--footer__link" href="#"><img class="offers--footer__img" src="assets/img/anime header2.png" alt=""></a>
+            </div>
+            <div class="offers--footer__line">
+                <a class="offers--footer__link" href="#"><img class="offers--footer__img" src="assets/img/anime header3.png" alt=""></a>
+                <a class="offers--footer__link" href="#"><img class="offers--footer__img" src="assets/img/anime header4.png" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <a href="#"><img src="" alt=""></a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer--space">
+            <div class="footer--column">
+                <div class="footer--border">
+                    <div class="footer--item">
+                        <h3 class="footer--item__title">Institucional</h3>
+                        <a href="#" class="footer--item__link">Quem somos
+                        </a>
+                        <a href="#" class="footer--item__link">Trabalhe Conosco
+                        </a>
+                        <a href="#" class="footer--item__link">GPA Marketplace | Venda conosco</a>
+                        <a href="#" class="footer--item__link">Política de Privacidade
+                        </a>
+                    </div>
+                    <div class="footer--item second--item">
+                        <h3 class="footer--item__title">Termos Buscados</h3>
+                        <a href="#" class="footer--item__link">Fraldas</a>
+                        <a href="#" class="footer--item__link">Heineken</a>
+                        <a href="#" class="footer--item__link">Achocolatados</a>
+                        <a href="#" class="footer--item__link">Cervejas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer--column">
+                <div class="footer--border">
+                    <div class="footer--item">
+                        <h3 class="footer--item__title">Categorias</h3>
+                        <a href="#" class="footer--item__link">Alimentos
+                        </a>
+                        <a href="#" class="footer--item__link">Bebidas
+                        </a>
+                        <a href="#" class="footer--item__link">Bebidas alcóolicas<a>
+                        <a href="#" class="footer--item__link">Automotivos
+                        </a>
+                        <a href="#" class="footer--item__link">Bebês e crianças
+                        </a>
+                        <a href="#" class="footer--item__link">Beleza e perfumaria
+                        </a>
+                        <a href="#" class="footer--item__link">Brinquedos e jogos<a>
+                        <a href="#" class="footer--item__link">Cama, mesa e banho
+                        </a>
+                        <a href="#" class="footer--item__link">Casa e construção
+                        </a>
+                        <a href="#" class="footer--item__link">Celulares e smartphones
+                        </a>
+                        <a href="#" class="footer--item__link">Climatização e ventilação
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer--column">
+                <div class="footer--item footer--item__noBorder">
+                    <h3 class="footer--item__title">Central de Atendimento</h3>
+                    <a href="#" class="footer--item__link">0800779-6761
+                    </a>
+                    <a href="#" class="footer--item__link">MeusPedidos
+                    </a>
+                    <a href="#" class="footer--item__link">FaleConosco<a>
+                    <a href="#"class="footer--item__link">Encontre uma Loja
+                    </a>
+                    <a href="#" class="footer--item__link">Formasde Pagamento
+                    </a>
+                    <a href="#" class="footer--item__link">Trocase devoluções
+                    </a>
+                    <a href="#" class="footer--item__link">DúvidasFrequentes
+                    </a>
+                </div>
+                <div class="footer--item__icons footer--item__noBorder ">
+                    <h3 class="footer--item__title">Nossos canais<h3>
+                    <a href="#" class="footer--item__brands"><i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer--item__brands"><i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer--item__brands"><i class="fa-brands fa-youtube"></i><a>
+                    <a href="#" class="footer--item__brands"><i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer--column">
+                <a class="footer--offer__link" href="#"><img class="footer--offer__img" src="assets/img/footer__img.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer--credits">
+            <div class="footer--space__credits">
+                <div class="footer--credits__item payments">
+                    <div class="footer--credits__line">
+                        <a href="#"><img src="assets/img/payment1.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment2.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment4.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment3.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment5.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment6.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment7.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment8.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment9.png" alt=""></a>
+                        <a href="#"><img src="assets/img/payment10.png" alt=""></a>
+                    </div>
+                    <div class="footer--credits__item">
+                        <p class="footer--credits__label">A VENDA E O CONSUMO DE BEBIDAS ALCOÓLICAS SÃO PROIBIDOS PARA MENORES DE 18 ANOS. BEBIDA ALCOÓLICA PODE CAUSAR DEPENDÊNCIA QUÍMICA E, EM EXCESSO, PROVOCA GRAVES MALES À SAÚDE. BEBA COM MODERAÇÃO. Preços, ofertas e condições exclusivas para internet e válidos durante o dia de hoje, podendo sofrer alterações sem prévia notificação. No caso de faltar algum produto, este não será entregue e o valor correspondente não será cobrado. Cia. Brasileira de Distribuição / CNPJ: 47508411/0001-56 / Av. Brigadeiro Luís Antônio, 3142, CEP: 01402-901 - São Paulo - SP</p>
+                    </div>
+                </div>
+                <div class="footer--credits__item">
+                    <a href="#"><img class="img--ticket" src="assets/img/footer selo.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/caroulselMain.js"></script>
+<script src="assets/js/caroulselProducts.js"></script>
+<script src="assets/js/headerFunctions.js"></script>
+</html>

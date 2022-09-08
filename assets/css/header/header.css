@@ -1,0 +1,112 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.search--container{
+    background-color: var(--dark-blue);
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+}
+.search--logo{
+    width: 74px;
+    height: 41px;
+    margin-left: 4%;
+    cursor: pointer;
+    align-self: center;
+}
+.search--form{
+    width: 80%;
+    align-self: center;
+    margin-left: 2%;
+}
+.search--form__input{
+    width: 90%;
+    max-width: 2300px;
+    margin-right: -2%;
+    height: 40px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--light-gray);
+}
+.search--form__input:focus{
+    outline: none;
+}
+.search--form__button{
+    min-width: 10%;
+    height: 40px;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.search--icon{
+    margin-left: 5px;
+}
+.search--form__span{
+    margin-left: 8px;
+    margin-right: 5px;
+    font-size: 0.75rem;
+}
+.search--utilities{
+    display: flex;
+    flex: 1;
+}
+.header--box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    font-weight: 700;
+    min-width: 146px;
+    width: 50%;
+}
+.header--box:hover{
+    background-color: var(--purple);
+    cursor: pointer;
+}
+.first--box{
+    font-size: 1rem;
+}
+.second--box{
+    font-size: 1.3rem;
+}
+.header--products{
+    display: flex;
+    height: 40px;
+    box-shadow: 1px 1px 12px var(--gray);
+    align-items: center;
+    justify-content: space-around;
+    color: var(--light-blue);
+    background-color: var(--white);
+}
+.header--categories{
+    box-sizing: border-box;
+    line-height: inherit;
+    align-items: center;
+}
+.buttonHeader{
+    color: var(--light-blue);
+    background-color: var(--white);
+    border: none;
+}
+.header--categories__link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.header--categories__link:hover{
+    text-decoration: underline;
+}
+.header--menu__icon{
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding-right: 15px;
+    cursor: pointer;
+}

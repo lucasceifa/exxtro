@@ -1,0 +1,101 @@
+.footer{
+    width: 100%;
+    background-color: var(--dark);
+}
+.footer--space{
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.footer--column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 464px;
+}
+.footer--border{
+    border-right: 1px solid var(--light-gray);
+    height: 350px;
+    margin: 30px 0;
+}
+.footer--item{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    font-size: 9pt;
+}
+.footer--item__title{
+    margin-bottom: 20px;
+    color: var(--light-blue);
+    font-size: 12pt;
+    letter-spacing: 0;
+}
+.footer--item__link{
+    text-decoration: none;
+    color: var(--light-gray);
+    margin-bottom: 12px;
+}
+.footer--item__link:hover{
+    text-decoration: underline;
+}
+.footer--item__icons{
+    margin: 0 30px;
+    font-size: 14pt;
+    letter-spacing: 4px;
+}
+.footer--item__brands{
+    text-decoration: none;
+    color: var(--light-gray);
+    margin-bottom: 12px;
+}
+.footer--item__noBorder{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.footer--offer__link{
+    width: 100%;
+}
+.footer--offer__img{
+    max-width: 394px;
+    width: 100%;
+    max-height: 465px;
+}
+.second--item{
+    margin-top: 30px;
+}
+.footer--credits{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--full-dark);
+}
+.footer--space__credits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+    margin: 30px auto;
+}
+.payments{
+    flex: 1;
+}
+.footer--credits__line{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.footer--credits__line a, .footer--credits__line img{
+    height: 24px;
+}
+.footer--credits__label{
+    color: var(--light-gray);
+    text-align: justify;
+    width: 850px;
+    font-size: 0.565rem;
+    margin-top: 20px;
+}
+.img--ticket{
+    width: 95px;
+    height: 80px;
+}

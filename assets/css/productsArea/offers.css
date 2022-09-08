@@ -1,0 +1,63 @@
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.advertising--banner{
+    width: 100%;
+    max-width: 1600px;
+    height: 250px;
+    background: url(../../img/advertising_banner.gif) no-repeat center var(--purple-banner);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.advertising--banner__img{
+    width: 100%;
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offers--banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.offers--bigBanners__links{
+    max-width: 19%;
+    max-height: 391px;
+    box-shadow: 2px 2px 5px var(--dark-blue);
+}
+.offers--smallBanners__links{
+    width: 16%;
+    max-height: 251px;
+    box-shadow: 2px 2px 5px var(--dark-blue);
+}
+.offers--banner__img{
+    width: 100%;
+    height: 100%;
+}
+.offers--footer{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin-bottom: 40px;
+}
+.offers--footer__line{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.offers--footer__link{
+    width: 49%;
+    margin-bottom: 15px;
+    height: 230px;
+}
+.offers--footer__img{
+    width: 100%;
+    max-width: 690px;
+    height: 100%;
+}

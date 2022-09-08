@@ -1,0 +1,19 @@
+:root{
+    --red: #8e0114;
+    --light-red: #be001b;
+    --white: #fff;
+    --light-blue: #006eb3;
+    --dark-blue: #050A30;
+    --gray: #4b4a4a;
+    --dark-gray:#403d3d;
+    --light-gray: #aaaaaa;
+    --dark: #262626;
+    --full-dark: #242424;
+    --purple: #8b01fe;
+    --light-purple: #9e6dfe;
+    --purple-banner: #3d2c6a;
+}
+.blur{
+    filter: blur(0.5rem);
+    transition: all ease 2s;
+}

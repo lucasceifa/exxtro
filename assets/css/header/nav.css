@@ -1,0 +1,26 @@
+.nav--header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--light-purple);
+}
+.nav--list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.nav--list__item{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.nav--list__link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.56rem;
+}
+.blue--link__area{
+    background-color: var(--purple);
+}
